@@ -25,7 +25,7 @@ Finally, `text_merger` itself can be installed via `pip`:
 ```
 
 ## Invocation
-`text_merger` shipes with a help message explaining its usage:
+`text_merger` ships with a help message explaining its usage:
 ```console
 (env) $ text_merger --help
 Usage: text_merger [OPTIONS]
