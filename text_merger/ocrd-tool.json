@@ -1,0 +1,34 @@
+{
+  "version": "0.0.1",
+  "git_url": "https://github.com/wrznr/text_merger",
+  "tools": {
+    "ocrd-text-merger": {
+      "executable" : "ocrd-text-merger",
+      "categories": [
+	"Text recognition and optimization"
+      ],
+      "steps": [
+	"recognition/post-correction"
+      ],
+      "description": "Merge two OCR text file groups on line level",
+      "input_file_grp": [
+	"OCR-D-OCR-TESS",
+	"OCR-D-OCR-KRAK",
+	"OCR-D-OCR-OCRO",
+	"OCR-D-OCR-CALA",
+	"OCR-D-OCR-ANY"
+      ],
+      "output_file_grp": [
+	"OCR-D-TXT-MERGED"
+      ],
+      "parameters": {
+	"dictionary": {
+	  "type": "string",
+	  "content-type": "text/plain",
+	  "description": "Gold dictionary",
+	  "required": true
+	}
+      }
+    }
+  }
+}
